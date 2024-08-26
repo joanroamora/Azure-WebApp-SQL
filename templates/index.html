@@ -12,25 +12,27 @@
             <h1>Form Title</h1>
         </div>
 
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Please enter only letters." required>
-        </div>
+        <form id="data-form" action="/upload" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Please enter only letters." required>
+            </div>
 
-        <div class="form-group">
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" pattern="[A-Za-z\s]+" title="Please enter only letters." required>
-        </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" pattern="[A-Za-z\s]+" title="Please enter only letters." required>
+            </div>
 
-        <div class="form-group">
-            <label for="account-number">Account Number:</label>
-            <input type="text" id="account-number" name="account-number" pattern="\d+" inputmode="numeric" title="Please enter only numbers." required>
-        </div>
+            <div class="form-group">
+                <label for="account-number">Account Number:</label>
+                <input type="text" id="account-number" name="account-number" pattern="\d+" inputmode="numeric" title="Please enter only numbers." required>
+            </div>
 
-        <div class="button-group">
-            <button type="button" class="btn upload-btn">Upload</button>
-            <button type="button" class="btn clear-btn" onclick="clearForms()">Clear</button>
-        </div>
+            <div class="button-group">
+                <button type="submit" class="btn upload-btn">Upload</button>
+                <button type="button" class="btn clear-btn" onclick="clearForms()">Clear</button>
+            </div>
+        </form>
     </div>
 
     <script>
